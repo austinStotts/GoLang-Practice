@@ -29,8 +29,6 @@ func worker(jobs <-chan int, results chan<- int) {
 	}
 }
 
-var fibs = make(map[int]int)
-
 func fib(n int) int {
 	if n <= 1 {
 		return n
